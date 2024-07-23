@@ -1,0 +1,257 @@
+
+
+
+/*================= Corps du travail, style d'ecriture color ou image de fond ======================*/
+
+body
+{
+	font-family : Trirong, Poppins, sans-serif;
+	font-size : 12px;
+	background-color    : rgba(235, 235, 235, 0.5);
+	background-image    : url("../img/background_image/background_mer1.jpg");  
+	background-repeat   : no-repeat;
+	background-size     : cover;     /*  force à image à prendre toute la taille de l'écran    */
+	background-position : top;       /*  rester au centre si on reduit notre image             */
+	position: relative;
+}
+
+/*===================================================================================*/
+
+*   /* selecteur universel */                      /* À ce que j'ai compris de plusieurs YOUTUBEURS, ce truc sert à éviter les decallages de padding ou margin par defaut existant sur certaines balises */
+{
+	box-sizing : border-box;
+}
+
+.carre > div {
+	border : solid 1px black;
+	background-color: #00ecec;
+}
+.carre {
+	display: grid;
+	width: 700px;
+	height: 700px;
+	grid-template-columns: repeat(14,1fr);
+	grid-template-rows: repeat(14,1fr);
+	top : 400px;
+	left: 100px;
+	z-index: 2;
+	position: absolute;
+}
+i {
+	position: absolute;
+	top:50%;
+	left : 50%;
+	transform: translate(-50%,-50%);
+}
+
+
+
+/*===================================================================================*/
+
+header                           /* balise contenant l'image de PROFIL et les contacts */
+{
+	/*position : fixed;*/
+	width : 840px;                                   /* Largeur de 800px selon les exigences du TP */
+	margin : auto;                                   /* Je le centre sur x */
+	border-radius : 10px;     
+	/*background-color : rgba(247, 248, 243, 0.5);*/
+    /*border : 1px solid rgba(200, 200, 200, 1);*/
+}
+#image_entete
+{
+    width : 1440px;
+    height : 200px;
+	display : inline-block;
+    border-radius : 10px;
+	margin-left : -300px; 
+}
+
+/*===================================================================================*/
+
+.flex-container-bateaux, .flex-container-passe-le-tour, .flex-container-controles, .flex-container-tires, .flex-container-peut-placer-bateaux 
+{
+	display : flex;
+	width : 1440px;
+	border-radius : 10px;
+	margin : auto;
+	/*background-color: DodgerBlue;*/
+}
+.flex-container-passe-le-tour{
+	justify-content: center;
+	font-size: 15px;
+}
+.flex-container-bateaux > div, .flex-container-controles > div, .flex-container-peut-placer-bateaux > div
+{
+	background-color: DodgerBlue;
+	margin : 5px;
+	padding : 5px;
+	width : 710px;
+	height : 710px;
+	border-radius : 10px;
+}
+.flex-container-passe-le-tour > div, .flex-container-peut-placer-bateaux > div
+{
+	background-color: DodgerBlue;
+	margin : 5px;
+	padding : 5px;
+	width : 710px;
+	border-radius : 10px;
+	text-align : center;
+	color : yellow;
+	font-size : 20px;
+}
+#gauche_peut_ajouter_bateau
+{
+	background-color: DodgerBlue;
+	color: yellow;
+	margin : 5px;
+	padding : 5px;
+	width : 50%;
+	border-radius : 10px;
+	font-size : 20px;
+}
+.flex-container-ajouter-gauche-bateau
+{
+	display : flex;
+	width : 97%;
+	margin : 5px;
+}
+.flex-container-bateaux
+{
+	height : 300px;
+}
+.flex-container-tires
+{
+	height : 300px;
+}
+
+/*========================  Actions : Ajouter - Supprimer - Tirer     =========================================================*/
+
+.flex-container-ajouter-gauche, .flex-container-supprimer-gauche, .flex-container-tirer-gauche, .flex-container-ajouter-droite, .flex-container-supprimer-droite, .flex-container-tirer-droite
+{
+	display : flex;
+}
+.flex-container-ajouter-gauche > div, .flex-container-supprimer-gauche > div, .flex-container-tirer-gauche > div, .flex-container-ajouter-droite > div, .flex-container-supprimer-droite > div, .flex-container-tirer-droite > div 
+{
+	/*margin : auto;*/
+}
+.flex-container-ajouter-gauche
+{
+	background : blue;
+}
+.flex-container-supprimer-gauche
+{
+	background : red;
+}
+.flex-container-tirer-gauche
+{
+	background : green;
+}
+/*------------------------------------------------ Droite ----------------------------------*/
+.flex-container-ajouter-droite
+{
+	background : blue;
+}
+.flex-container-supprimer-droite
+{
+	background : red;
+}
+.flex-container-tirer-droite
+{
+	background : green;
+}
+/*===========================    Grid qui permet la creation du train de jeux 14 x 28     ================================*/
+
+.carre_bateaux_gauche, .carre_bateaux_droite, .carre_tires_gauche, .carre_tires_droite
+{
+    display : grid;
+    width : 560px;     /* ce nombre est un nmultiple de 10 et de 28   */
+    height : 280px;   /* ce nombre est un nmultiple de 20 et de 14   */
+    grid-template-columns : repeat(28,1fr);  /* // 11 x 28   */
+    grid-template-rows : repeat(14,1fr);
+    z-index : 2;
+}
+.carre_bateaux_gauche > div, .carre_bateaux_droite > div, .carre_tires_gauche > div, .carre_tires_droite > div
+{
+    border : solid 1px black;
+    /*background-color:green;*/
+}
+.carre_bateaux_droite > div, .carre_tires_droite > div
+{
+    border : solid 1px red;
+    /*background-color:green;*/
+}
+/*===========================    Bateaux             ============================*/
+
+.flex-container-ajouter-gauche-bateau
+{
+	display : flex;
+	background-color: yellow;
+}
+.flex-container-supprimer-gauche-message
+{
+	display : flex;
+	/*background-color: yellow;*/
+	margin-left : 60px;
+	margin-right : 230px;
+}
+.flex-container-tirer-gauche-message
+{
+	display : flex;
+	/*background-color: yellow;*/
+	margin-left : 90px;
+	margin-right : 70px;
+}
+.warrios-gauche
+{
+    width: 120px;
+	height : 10px;
+	margin-left : 15px;
+	margin-right : 15px;
+}
+.bigD-gauche
+{
+    width: 100px;
+	height : 10px;
+	margin-left : 15px;
+	margin-right : 15px;
+}
+.corvette-gauche 
+{
+    width: 50px;
+	height : 10px;
+	margin-left : 15px;
+	margin-right : 15px;
+}
+.capitain-gauche 
+{
+    width: 80px;
+	height : 10px;
+	margin-left : 15px;
+	margin-right : 15px;
+}
+.littleD-gauche 
+{
+    width: 50px;
+	height : 10px;
+	margin-left : 15px;
+	margin-right : 15px;
+}
+
+/*===========================    le Pied de page     =====================================================*/
+
+footer                                               
+{
+	width : 100%;                                        /* Mon footer prend TOUTE la largeur de ma page*/
+	height : 40px;                                       /* Une hauteur de 40px pour pouvoir centrer mon texte sur la verticale*/
+	left : 10px;                                         /* remarque qu'ici, ce n'est PAS un MARGIN-LEFT mais plutot un LEFT */
+	right : 10px;                                        /* je le mets en retrait de 10px par rapport aux bordures de la page */
+	font-size: 15px;
+	margin-bottom : 10px;
+	padding : 10px;                                      /* je decalle mon texte vers l'interieur */
+	background : black;       
+	text-align : center;                                 /* Je centre le text de mon arriere-plan*/
+	color : rgba(255, 255, 255, 0.5);                  /* Je colorie le texte de mon arriere-plan*/
+}
+
+/*====================================  Fin du fichier Design.CSS  ===========================================*/

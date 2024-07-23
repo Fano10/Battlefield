@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> TP Final du cours de Conception et Developpement Web | par Ida, Joel & Miora</title>
+        <link href="css/battle.css" rel="stylesheet" type="text/css"/>
+        <link href="css/design.css" rel="stylesheet" type="text/css"/>
+        <script src="js/Battle.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> <!-- les images -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Sofia|Trirong|Audiowide"> <!-- le style d'écriture -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&effect=fire|neon|outline|emboss|shadow-multiple"> 
+    </head>
+    
+    <header>
+        <img id="image_entete" src="img/background_image/battleship.jpg" title="Torpille" alt="torpille">
+    </header>
+    
+    <body>
+            <!--
+                <button onclick="tireRocket_1()">tirer rocket 1</button>
+                <button onclick="tireRocket_2()">tirer rocket 2</button>
+                <button onclick="cibleAtteinte_1()">cible attente 1</button>
+                <button onclick="cibleManquee_1()">cible manquee 1</button>
+                <button onclick="cibleManquee_2()">cible manquee 2</button>
+            -->
+        <div class="flex-container-passe-le-tour">
+            <div class="tour"></div>
+            <p id="score">Score: 0</p>
+        </div>
+        
+        <div class="flex-container-bateaux">
+            <div class="carre_bateaux_gauche">
+                <div class="Adversaire">
+                </div>
+            </div>
+
+            <div class="carre_bateaux_droite">
+                <div class = "MonTerrain">
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>

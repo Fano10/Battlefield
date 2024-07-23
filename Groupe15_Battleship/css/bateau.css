@@ -1,0 +1,154 @@
+/*CSS bateau*/
+
+.BotTop ,.RightLeft,.Ready {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background-color: aqua;
+    border: solid 1px black;
+    border-radius: 40px;
+    margin-left: 50%;
+    top: 150px;
+    position: relative;
+}
+
+.Not.Ready{
+    display: none;
+}
+
+.BotTop:active , .RightLeft:active{
+    background-color: blue;
+}
+
+.warrios, .bigD, .corvette, .littleD, .capitain{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    margin-left: 50%;
+    position: relative;
+    top: 250px;
+}
+.warrios{
+    width: 300px;
+}
+.bigD{
+    width: 250px;
+}
+.corvette {
+    width: 200px;
+}
+.capitain {
+    width: 200px;
+}
+.littleD {
+    width: 150px;
+}
+.corvette > div , .littleD > div,.bigD >div, .warrios > div , .capitain > div {
+    width: 50px;
+    height: 50px;
+}
+div .corvette0{
+    background-image: url("../img/ship/corvette/corvette0.png");
+    border-right: none;
+}
+div .corvette1{
+    background-image: url("../img/ship/corvette/corvette1.png");
+    border-right: none;
+    border-left: none;
+}
+div .corvette2{
+    background-image: url("../img/ship/corvette/corvette2.png");
+    border-right: none;
+    border-left: none;
+}
+div .corvette3{
+    background-image: url("../img/ship/corvette/corvette3.png");
+    border-left: none;
+}
+div .littleD0{
+    background-image: url("../img/ship/littleD/littleD0.png");
+    border-right: none;
+}
+div .littleD1{
+    background-image: url("../img/ship/littleD/littleD1.png");
+    border-right: none;
+    border-left: none;
+}
+div .littleD2{
+    background-image: url("../img/ship/littleD/littleD2.png");
+    border-left: none;
+}
+div .bigD0{
+    background-image: url("../img/ship/BigD/Bigd0.png");
+    border-right: none;
+}
+div .bigD1{
+    background-image: url("../img/ship/BigD/Bigd1.png");
+    border-right: none;
+    border-left: none;
+}
+div .bigD2{
+    background-image: url("../img/ship/BigD/Bigd2.png");
+    border-right: none;
+    border-left: none;
+}
+div .bigD3{
+    background-image: url("../img/ship/BigD/Bigd3.png");
+    border-right: none;
+    border-left: none;
+}
+div .bigD4{
+    background-image: url("../img/ship/BigD/Bigd4.png");
+    border-left: none;
+}
+
+div .warrios0{
+    background-image: url("../img/ship/Warrios/Warrios0.png");
+    border-right: none;
+}
+div .warrios1{
+    background-image: url("../img/ship/Warrios/Warrios1.png");
+    border-right: none;
+    border-left: none;
+}
+div .warrios2{
+    background-image: url("../img/ship/Warrios/Warrios2.png");
+    border-right: none;
+    border-left: none;
+}
+div .warrios3{
+    background-image: url("../img/ship/Warrios/Warrios3.png");
+    border-right: none;
+    border-left: none;
+}
+div .warrios4{
+    background-image: url("../img/ship/Warrios/Warrios4.png");
+    border-right: none;
+    border-left: none;
+}
+div .warrios5{
+    background-image: url("../img/ship/Warrios/Warrios5.png");
+    border-left: none;
+}
+
+div .capitain0{
+    background-image: url("../img/ship/Capitain/capitain0.png");
+    border-right: none;
+}
+div .capitain1{
+    background-image: url("../img/ship/Capitain/capitain1.png");
+    border-right: none;
+    border-left: none;
+}
+div .capitain2{
+    background-image: url("../img/ship/Capitain/capitain2.png");
+    border-right: none;
+    border-left: none;
+}
+div .capitain3{
+    background-image: url("../img/ship/Capitain/capitain3.png");
+    border-left: none;
+}
+.navire{
+    transform:  rotate(90deg);
+}

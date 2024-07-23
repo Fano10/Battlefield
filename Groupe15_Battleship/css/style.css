@@ -1,0 +1,30 @@
+
+body {
+    position: relative;
+}
+
+.carre > div {
+    border : solid 1px black;
+    background-color: #00ecec;
+}
+.carre {
+    display: grid;
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    top : 100px;
+    left: 40px;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(14,1fr);
+    z-index: 2;
+}
+i {
+    position: absolute;
+    top:50%;
+    left : 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+

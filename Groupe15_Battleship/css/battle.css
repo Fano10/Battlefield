@@ -1,0 +1,57 @@
+
+
+.Adversaire{
+    display: inline-grid;
+    width:700px;
+    height: 700px;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(14,1fr);
+    background-color: black;
+}
+.tour{
+    height: 50px;
+}
+body div .tour.red{
+
+    background-color: red;
+}
+body div .tour.green{
+    background-color: green;
+}
+.MonTerrain {
+    display: inline-grid;
+    width:700px;
+    height: 700px;
+    grid-template-columns: repeat(14,1fr);
+    grid-template-rows: repeat(14,1fr);
+    background-color: #697e1c;
+}
+
+.Adversaire > div {
+    border: 1px solid yellow;
+}
+.MonTerrain >div{
+    border: 1px solid #ffffff;
+}
+
+.MonTerrain >div:not(.case,.eau,.feu,.red){
+    background-color: coral;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.Adversaire > div:hover:not(.eau,.red){
+    background-color: #9900ff;
+}
+
+div .eau{
+
+    background-color: #0000f6;
+}
+
+div .feu{
+    background-image: url("../img/explosion.png");
+}
+
+div .red{
+    background-color: red;
+}
